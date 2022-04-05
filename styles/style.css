@@ -1,0 +1,32 @@
+body {
+    padding: 0;
+    text-align: center;
+  }
+  
+  .portada {
+    float: left;
+    padding: 5% 10%;
+    width: 360px;
+  }
+  
+  body button {
+    font-size: 40px;
+    background-color: green;
+    color: #fff;
+    padding: 2% 8%;
+    border-radius: 100px;
+    margin-bottom: 60px;
+  }
+  
+  #game-board {
+      float: left;
+      padding: 20px 0px;
+  }
+  
+  canvas {
+    border: 1px solid black;
+   background-image: url(/images/isla\ gif.webp);  
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
