@@ -31,10 +31,10 @@ let apple = new Image ();
   apple.src = "images/apple.jpg";
 
   let banana = new Image();
-  banana.src = "images/banana new.jpg";
+  banana.src = "images/banana.jpg";
   
   let orange = new Image();
-    orange.src = "imagesimages/orange new.png";
+    orange.src = "images/orange .png";
 
 class Fruits {
   constructor(id){
@@ -124,7 +124,7 @@ function animate() {
 
   for (let i = 0; i < enemieArr.length; i++) {
     let image = new Image();
-    image.src = "images/yellow.jpg";
+    image.src = "images/enemie.jpg";
     ctx.drawImage(
       image,
       enemieArr[i].x,
