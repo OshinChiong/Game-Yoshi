@@ -2,7 +2,7 @@ body {
     padding: 0%;
     text-align: center;
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   background-image: url("images/wallpaper.jpg"); 
+   background-image: url("styles/wallpaper.jpg"); 
    background-repeat:no-repeat;
    background-size: cover;
   }
@@ -33,7 +33,7 @@ body {
   
   canvas {
     border: 1px solid black;
-   background-image: url("images/background\ canvas.gif");  
+   background-image: url("styles/background\ canvas.gif");  
     background-repeat:no-repeat;
     background-size:cover;
     border-radius: 8%;
