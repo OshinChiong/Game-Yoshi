@@ -46,6 +46,7 @@ class Fruits {
     this.id = id;
     this.image = this.generateFruits();
     this.pointValue = 5;
+    
   }
   
   generateFruits = () => {
@@ -88,19 +89,37 @@ let int;
 function startGame() {
   int = setInterval(addEnemie, 1000);
   int = setInterval(addFruits, 1000)
+  // aqui
+  time = 30;
+  score = 0;
+  fruitsArr = [];
+  timeInterval = setInterval(timer, oneSecond);
   animate();
 }
 
 let score;
 let game;
+/// aqui
+let time = 30;
+
+function timer() {
+    --time;
+    if (time < 0) {
+        time = 30;
+    }
+}
+let oneSecond = 1000;
 
 
 function animate() {
   game = window.requestAnimationFrame(animate);
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.fillStyle = "white";
+  ctx.fillStyle = "black";
   ctx.font = "28px sans-serif";
-  ctx.fillText(`Score: ${player.score}`, 70, 30);
+  ctx.fillText(`Score: ${player.score}`, 50, 30);
+
+  ctx.fillText("Time:" + time, 5, 80);
+   
   ctx.drawImage(yo, player.x, player.y, player.w, player.h);
 
   for (let i = 0; i < enemieArr.length; i++) {
@@ -111,7 +130,9 @@ function animate() {
       enemieArr[i].x,
       enemieArr[i].y,
       enemieArr[i].w,
-      enemieArr[i].h
+      enemieArr[i].h,
+
+      
     );
      enemieArr[i].x+=2;
 
@@ -121,6 +142,9 @@ function animate() {
        console.log("Collision")
        gameOver();
      }
+     if (time === 0) {
+      gameOver();
+  }
     }
 
   for(let i = 0; i < fruitsArr.length; i++){
