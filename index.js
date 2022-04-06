@@ -22,7 +22,7 @@ class Yoshi {
 let player = new Yoshi();
 
 const yo = new Image();
-yo.src = "/images/yoshi caminando.gif";
+yo.src = "images/yoshi caminando.gif";
 yo.onload = function () {
   ctx.drawImage(yo, player.x, player.y, player.w, player.h);
 };
