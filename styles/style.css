@@ -33,7 +33,7 @@ body {
   
   canvas {
     border: 1px solid black;
-   background-image: url("styles/new bg.gif");  
+   background-image: url("styles/backgroundcanvas.gif");  
     background-repeat:no-repeat;
     background-size:cover;
     border-radius: 8%;
