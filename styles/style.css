@@ -1,12 +1,19 @@
 body {
-    padding: 0;
+    padding: 0%;
     text-align: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   background-image: url(/wallpaper.jpg); 
+   background-repeat:no-repeat;
+   background-size: cover;
   }
   
+  
+
   .portada {
-    float: left;
-    padding: 5% 10%;
+    float:left;
+    padding: 8% 8%;
     width: 360px;
+    border-radius: 20%;
   }
   
   body button {
@@ -14,19 +21,22 @@ body {
     background-color: green;
     color: #fff;
     padding: 2% 8%;
-    border-radius: 100px;
+    border-radius: 30px;
     margin-bottom: 60px;
+    position:relative;
   }
   
   #game-board {
       float: left;
-      padding: 20px 0px;
+      padding: 50px 0px;
+      
   }
   
   canvas {
     border: 1px solid black;
-   background-image: url(/images/isla\ gif.webp);  
-    background-repeat: no-repeat;
-    background-size: cover;
+   background-image: url(/images/new\ bg.gif);  
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius: 8%;
   }
   
