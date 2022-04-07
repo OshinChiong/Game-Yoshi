@@ -2,7 +2,7 @@ body {
     padding: 0%;
     text-align: center;
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   background-image: url(styles/wallpaper.JPG); 
+   background-image: url(".../styles/wallpaper.jpg"); 
    background-repeat:no-repeat;
    background-size: cover;
    
