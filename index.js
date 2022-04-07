@@ -28,13 +28,13 @@ yo.onload = function () {
 };
 
 let apple = new Image ();
-  apple.src = "images/apple.jpg";
+  apple.src = "images/apple.gif";
 
   let banana = new Image();
-  banana.src = "images/banana.jpg";
+  banana.src = "banana.gif";
   
   let orange = new Image();
-    orange.src = "images/orange .png";
+    orange.src = "images/orange.gif";
 
 class Fruits {
   constructor(id){
@@ -124,7 +124,7 @@ function animate() {
 
   for (let i = 0; i < enemieArr.length; i++) {
     let image = new Image();
-    image.src = "images/enemie.jpg";
+    image.src = "tumblr_pn8ontlckI1rrftcdo1_540.webp";
     ctx.drawImage(
       image,
       enemieArr[i].x,
