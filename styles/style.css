@@ -11,7 +11,7 @@ body {
 
   .portada {
     float:left;
-    padding: 8% 8%;
+    padding: 3% 8%;
     width: 360px;
     border-radius: 20%;
   }
@@ -25,7 +25,12 @@ body {
     margin-bottom: 60px;
     position:relative;
   }
-  
+  .restart-btn{
+    background-color: red;
+    padding: 0% 2%;
+    font-size: 30px;
+  }
+
   #game-board {
       float: left;
       padding: 50px 0px;

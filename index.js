@@ -6,8 +6,30 @@ const w = canvas.width;
 const h = canvas.height;
 
 document.getElementById("start-button").onclick = () => {
-  startGame();
+   startGame();
+  document.querySelector('.restart-btn').addEventListener('click', function(){
+  window.location.reload();
+    return false;
+  });
 };
+
+//// prueba 
+// class sound {
+//   constructor(src) {
+//     this.sound = document.createElement("audio");
+//     this.sound.src = src;
+//     this.sound.setAttribute("preload", "auto");
+//     this.sound.setAttribute("controls", "none");
+//     this.sound.style.display = "none";
+//     document.body.appendChild(this.sound);
+//     this.play = function () {
+//       this.sound.play();
+//     };
+//     this.stop = function () {
+//       this.sound.pause();
+//     };
+//   }
+// }
 
 class Yoshi {
   constructor() {
@@ -89,7 +111,10 @@ let int;
 function startGame() {
   int = setInterval(addEnemie, 1000);
   int = setInterval(addFruits, 1000)
-  // aqui
+
+  // myMusic = new sound("YoshiIsland.mp3");
+  //   mySound.play();
+
   time = 30;
   score = 0;
   fruitsArr = [];
@@ -97,9 +122,9 @@ function startGame() {
   animate();
 }
 
+// let mySound = new sound("sound2.mp3");
 let score;
 let game;
-/// aqui
 let time = 30;
 
 function timer() {
@@ -131,8 +156,6 @@ function animate() {
       enemieArr[i].y,
       enemieArr[i].w,
       enemieArr[i].h,
-
-      
     );
      enemieArr[i].x+=2;
 
@@ -153,12 +176,14 @@ function animate() {
     detectCollision(player, fruta)
        }
     
-
   }
 
   function gameOver() {
     window.cancelAnimationFrame(game);
     clearInterval(int);
+    fruitsArr=[];
+    enemieArr=[];
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = "green";
     ctx.fillRect(0, 0, w, h);
     ctx.fillStyle = "red";
@@ -223,9 +248,6 @@ function detectCollision(player, obj){
     ) {
       return true
     }
-
-  
-  
   }
   
   
